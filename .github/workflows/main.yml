@@ -1,10 +1,11 @@
-name: build
+name: main
 
 on: 
   push:
     paths: 
       - build/**
       - .github/workflows/build.yml
+      
 
 jobs:
   android:
