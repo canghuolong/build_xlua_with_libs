@@ -1,11 +1,11 @@
 name: main
 
 on: 
-  push:
-    paths: 
-      - build/**
-      - .github/workflows/build.yml
-      
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'tag name'     
+        required: true
 
 jobs:
   android:
